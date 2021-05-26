@@ -1,0 +1,14 @@
+cffi==1.14.5
+click==8.0.0
+cryptography==3.4.7
+Flask==2.0.0
+itsdangerous==2.0.0
+Jinja2==3.0.0
+jwcrypto==0.8
+MarkupSafe==2.0.0
+pycparser==2.20
+pycryptodome==3.10.1
+pycryptodomex==3.10.1
+python-jwt==3.3.0
+six==1.16.0
+Werkzeug==2.0.0

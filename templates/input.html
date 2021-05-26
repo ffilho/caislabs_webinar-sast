@@ -1,0 +1,14 @@
+<!doctype html>
+<title>M&oacute;dulo {{ title }}</title>
+<h1>M&oacute;dulo {{ title }}</h1>
+{% if otp %}
+  <h1>{{ otp }}</h1>
+  <a href="{{ path }}">Voltar ao m&oacute;dulo de {{ title }}</a>
+{% else %}
+  <form action="{{ path }}" method="post">
+    <label for="output">{{ desc }}:</label><br>
+    <input type="text" name="output"> | <input type="submit" value="Enviar">
+  </form>
+{% endif %}
+</br>
+<a href="../">Voltar para home</a>
