@@ -6,6 +6,7 @@
   <a href="{{ path }}">Voltar ao m&oacute;dulo de {{ title }}</a>
 {% else %}
   <form action="{{ path }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
     <label for="output">{{ desc }}:</label><br>
     <input type="text" name="output"> | <input type="submit" value="Enviar">
   </form>
